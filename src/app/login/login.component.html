@@ -1,14 +1,19 @@
 <div class="container">
-    <h2>LOGIN</h2>
-    <form action="dashboard">
-        <div>
-            <label for="username" >Username</label>
-            <input type="text" id="username" [(ngModel)]="loginData.username" [ngModelOptions]="{standalone: true}">
-        </div>
-        <div>
-            <label for="password" >Password</label>
-            <input type="text" id="password" [(ngModel)]="loginData.password" [ngModelOptions]="{standalone: true}">
-        </div>
-        <button type="submit" (click)="onSubmit()">Submit</button>
-    </form>
+    <div class="header_login">
+        <h2>LOGIN</h2>
+    </div>
+    <div class="form_group">
+        <form action="dashboard">
+            <div class="for_username">
+                <label for="username" >Username</label>
+                <input type="text" id="username" [(ngModel)]="loginData.username" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="for_password">
+                <label for="password" >Password</label>
+                <input type="text" id="password" [(ngModel)]="loginData.password" [ngModelOptions]="{standalone: true}">
+            </div>
+                <button type="submit" (click)="onSubmit()">Submit</button>
+        </form>
+    </div>
+    
 </div>
