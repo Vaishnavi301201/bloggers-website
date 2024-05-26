@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="header_login">
+        <h2>REGISTER</h2>
+    </div>
+    <div class="form_group">
+        <form action="dashboard">
+            <div class="for_username">
+                <label for="username" >Username</label>
+                <input type="text" id="username" [(ngModel)]="registrationData.username" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="for_password">
+                <label for="password" >Password</label>
+                <input type="text" id="password" [(ngModel)]="registrationData.password" [ngModelOptions]="{standalone: true}">
+            </div>
+                <button type="submit" (click)="onSubmit()">Submit</button>
+        </form>
+    </div>
+    
+</div>

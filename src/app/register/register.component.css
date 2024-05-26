@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height: 75vh
+}
+
+.header_login{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: large;
+}
+
+.for_username{
+    font-family: inherit;
+    font-size: larger;
+    margin: 10px;
+}
+
+.for_password{
+    font-family: inherit;
+    font-size: larger;
+    margin: 10px;
+}
+
+.submit_button{
+    font-family: inherit;
+    font-size: larger;
+    margin: 10px;
+}
+.form-group {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+button{
+    position: relative;
+    margin-left: 37%;
+    font-size: larger;
+    padding: 10px;
+}
+label{
+    margin-right: 8px;
+}
+.for_password label{
+    margin-right: 12px;
+}
+input{
+    height: 25px;
+}

@@ -9,6 +9,7 @@ import { tap } from 'rxjs';
 export class AuthService {
 
   private loginUrl = 'http://localhost:8080/api/login';
+  private registerUrl = 'http://localhost:8080/api/register'
   private isLoggedIn = false;
 
   constructor(
@@ -17,6 +18,11 @@ export class AuthService {
 
   login(credentials: any): Observable<HttpResponse<any>> {
     return this.http.post<HttpResponse<any>>(this.loginUrl, credentials, { observe: 'response' });
+  }
+
+  register(credentials:any):Observable<HttpResponse<any>>{
+    return this.http.post<HttpResponse<any>>(this.registerUrl, credentials, { observe: 'response' });
+
   }
 
 
