@@ -25,6 +25,7 @@ export class LoginComponent {
       next:async(response)=>{
         if(response.status== 200)
           {
+            this.authService.isUserRegistered=true;
             this.router.navigate(['/dashboard']);
           }
       },

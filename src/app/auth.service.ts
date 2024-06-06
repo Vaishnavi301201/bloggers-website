@@ -11,6 +11,7 @@ export class AuthService {
   private loginUrl = 'http://localhost:8080/api/login';
   private registerUrl = 'http://localhost:8080/api/register'
   private isLoggedIn = false;
+  isUserRegistered:boolean=false;
 
   constructor(
     private http: HttpClient
